@@ -1,0 +1,100 @@
+/* general */
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../images/b2.jpeg);
+    background-size: contain;
+    background-position: center;
+}
+
+a{
+    color: #235e77;
+}
+
+a:hover{
+    color: #2b7798;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #75a2b5;
+    text-transform: uppercase;
+}
+
+footer{
+    position: relative;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+#error{
+    color: rgb(72, 16, 30);
+    background-color: rgba(255, 16, 51, 0.157);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    width: 92%;
+    padding: 0 0.4rem;
+    margin: 0 0 0.4rem 0;
+}
+
+/* navbar */
+
+.navbar{
+    width: 90%;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    position: relative;
+    margin: .5rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #7aabc0;
+    left: 0;
+    bottom: -7px;
+    transition: .5s;
+    transform-origin: right;
+    position: absolute;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 1rem;
+}
